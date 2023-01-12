@@ -30,7 +30,6 @@ function App() {
                      */
                 }
 
-                <Button variant="contained">Contained</Button>
             </Container>
 
         </ThemeProvider>

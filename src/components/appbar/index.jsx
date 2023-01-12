@@ -4,14 +4,17 @@ import AppbarDesktop from './appbarDesktop'
 import AppbarMobile from './appbarMobile'
 
 
-
 const AppBar = () => {
     const theme = useTheme()
     const matches = useMediaQuery( theme.breakpoints.down( 'md' ) )
 
     return (
         <>
-            { matches ? <AppbarMobile/> : <AppbarDesktop/> }
+            {
+                matches
+                    ? <AppbarMobile matches={ matches }/>
+                    : <AppbarDesktop matches={ matches }/>
+            }
         </>
     )
 }

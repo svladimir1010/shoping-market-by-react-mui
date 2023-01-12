@@ -1,6 +1,6 @@
 import '@fontsource/montez'
 import { Box, List, styled, Typography } from '@mui/material'
-import { Colors } from '../index'
+import { Colors } from '../theme'
 
 // container
 export const AppbarContainer = styled( Box )( () => ({
@@ -19,6 +19,7 @@ export const AppbarHeader = styled( Typography )( () => ({
     fontFamily: '"Montez", "cursive"',
     color: Colors.secondary,
 }) )
+// npm install @fontsource/montez
 
 
 export const MyList = styled( List )( ( { type } ) => ({
@@ -28,4 +29,20 @@ export const MyList = styled( List )( ( { type } ) => ({
     alignItems: 'center',
 }) )
 
-// npm install @fontsource/montez
+
+export const ActionIconsContainerMobile = styled( Box )( () => ({
+    display: 'flex',
+    backgroundColor: Colors.shaft,
+    position: 'fixed',
+    bottom: 0,
+    left: 0,
+    width: '100%',
+    alignItems: 'center',
+    zIndex: 99,
+    borderTop: `1px solid ${Colors.border}`
+}) )
+
+export const ActionIconsContainerDesktop = styled( Box )( () => ({
+    flexGrow: 0,
+}) )
+
