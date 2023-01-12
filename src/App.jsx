@@ -2,6 +2,7 @@ import { Button, Container, ThemeProvider } from '@mui/material'
 // import {ThemeProvider} from '@mui/system'
 import { useEffect } from 'react'
 import AppBar from './components/appbar'
+import Banner from './components/banner'
 import theme from './styles/theme'
 
 
@@ -17,6 +18,8 @@ function App() {
                 sx={{background: '#fff'}}
             >
                 <AppBar/>
+                <Banner/>
+
                 {
                     /*
                      AppBar
