@@ -2,6 +2,7 @@ import { Box, Slide } from '@mui/material'
 import { useEffect, useRef, useState } from 'react'
 import { MessageText, PromotionsContainer } from '../../styles/promotions'
 
+// messages from Db
 const messages = [
     '20% off on your first order!',
     'Summer sale starts now, visit any store.',
